@@ -29,9 +29,8 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: artifact-files
-          path: |
+          path:
             artifact
-            package.json 
   deploy:
     needs: build
     runs-on: ubuntu-latest
